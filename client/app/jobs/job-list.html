@@ -1,0 +1,6 @@
+<a ng-repeat = "job in jobs" ng-href= "{{'/#/jobs/' + job._id}}">
+  <h1>
+    {{job.title}}
+  </h1>
+  <pre>{{job.created | date: 'MM/dd/yyyy @ h:mma'}} </pre>
+</a>
